@@ -1,13 +1,12 @@
 %define prerelease 9ede152210fa25c1377d33e867cb828c19316445
 %define import_path github.com/gorilla/mux
-%define gopath %{_libdir}/golang
-%define gosrc %{gopath}/src/pkg/%{import_path}
+%define gosrc %{go_dir}/src/pkg/%{import_path}
 %define shortcommit %(c=%{prerelease}; echo ${c:0:7})
 
 Summary:	A powerful URL router and dispatcher for golang
 Name:		golang-gorilla-mux
 Version:	0.1.git%{shortcommit}
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Other
 Url:		https://%{import_path}
