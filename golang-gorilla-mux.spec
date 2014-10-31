@@ -6,13 +6,14 @@
 Summary:	A powerful URL router and dispatcher for golang
 Name:		golang-gorilla-mux
 Version:	0.1.git%{shortcommit}
-Release:	2
+Release:	3
 License:	BSD
 Group:		Development/Other
 Url:		https://%{import_path}
 Source0:        https://%{import_path}/archive/%{prerelease}.tar.gz
 Provides:       golang(%{import_path}) = %{version}-%{release}
 BuildArch:	noarch
+BuildRequires:	golang
 
 %description
 Package gorilla/mux implements a request router and dispatcher.
